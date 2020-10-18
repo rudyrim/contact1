@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Gestion des contacts</title>
+    <style> 
+    input[type=text] {
+        border:  solid red;
+        width: 350px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color:#f2f2f2;
+    }
+    input[type=button]{
+        margin: 4px 2px;
+        background-color: rgb(99, 169, 192);
+        border: none;
+        font-size: 20px;
+        padding: 15px 32px;
+        text-align: center;
+        width: 350px;
+        display: inline-block;
+    }          
+    input[type=submit] {
+        background-color: #4CAF50;
+        text-decoration: none;
+        margin: 4px 2px;
+    }
+    input[type=submit]:hover {
+    background-color: #45a049;
+    }
+    form {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  width: 350px;
+}
+input[type=text]:hover{
+  border-radius: 50px;
+  background-color:white;
+}
+
+body{
+    font-size: 24px;
+}
+    </style>
+</head>
+
+<body>
+	<script src="contacts.js"></script>
+	<div>
+        <input type="button" name="add" value="Affichage" onclick="logcontact()"> </br>
+        <input type="button" name="add" value="Ajouter" onclick="ContactForms()">
+        <form id="log"></form>
+        </form>
+        <input type="button" name="display" value="Liste" onclick="listerContacts(contacts)">
+        <div id="list">
+        </div>
+	</div>
+
+</body>
+
+</html>
